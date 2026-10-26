@@ -1,0 +1,106 @@
+PATH = "contact/index.html"
+ACTIVE = "contact"
+TITLE = "Book a Free Audit | Cut &amp; Convert"
+DESC = "Request a free Google Ads, local search or YouTube creative audit from Cut & Convert."
+
+BODY = """
+  <section class="page-hero contact-hero">
+    <div class="wrap contact-wrap">
+      <div class="split-copy contact-intro">
+        <span class="pill">Free audit</span>
+        <h1>Let's see what's leaving money on the table.</h1>
+        <p class="lede">Tell me a little about your business and I'll take a look at your Google Ads, local listings or YouTube creative. You'll get a clear, prioritized list of what to fix first. No pressure, no long pitch.</p>
+        <ul class="check-list">
+          <li>A real review of your account, not a generic report</li>
+          <li>A 30-minute call to walk through it</li>
+          <li>A reply within one business day</li>
+        </ul>
+      </div>
+
+      <form class="lead-form" action="/contact/send.php" method="post" novalidate>
+        <p class="form-error" role="alert" hidden>Something went wrong sending your request. Please check the fields below and try again, or email shaunmalinao@gmail.com.</p>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="phone">Phone <span class="optional">(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="website">Business or website</label>
+            <input id="website" name="website" type="text" autocomplete="url" placeholder="yourbrand.com">
+          </div>
+        </div>
+
+        <fieldset class="field">
+          <legend>What can I help with?</legend>
+          <div class="choice-row">
+            <label class="choice"><input type="checkbox" name="services[]" value="Ecommerce" data-service="ecommerce"><span>Ecommerce</span></label>
+            <label class="choice"><input type="checkbox" name="services[]" value="Local Business" data-service="local"><span>Local Business</span></label>
+            <label class="choice"><input type="checkbox" name="services[]" value="YouTube Creative" data-service="youtube"><span>YouTube Creative</span></label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="spend">Monthly ad spend</label>
+          <select id="spend" name="spend">
+            <option value="">Select one</option>
+            <option>Not advertising yet</option>
+            <option>Under $5K</option>
+            <option>$5K to $25K</option>
+            <option>$25K to $100K</option>
+            <option>$100K+</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Anything else I should know?</label>
+          <textarea id="message" name="message" rows="4" placeholder="Goals, what's working, what isn't..."></textarea>
+        </div>
+
+        <div class="hp" aria-hidden="true">
+          <label for="company_url">Leave this field empty</label>
+          <input id="company_url" name="company_url" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button class="btn btn-coral btn-block" type="submit">Request my free audit</button>
+        <p class="form-note muted">Prefer email? Write to <a href="mailto:shaunmalinao@gmail.com">shaunmalinao@gmail.com</a>.</p>
+      </form>
+    </div>
+  </section>
+"""
+
+SCRIPTS = """
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var svc = params.get('service');
+  if (svc) {
+    var box = document.querySelector('input[data-service="' + svc + '"]');
+    if (box) box.checked = true;
+  }
+  if (params.get('error')) document.querySelector('.form-error').hidden = false;
+
+  var form = document.querySelector('.lead-form');
+  form.addEventListener('submit', function (e) {
+    var ok = true;
+    ['name', 'email'].forEach(function (id) {
+      var el = document.getElementById(id);
+      var bad = !el.value.trim() || (id === 'email' && !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(el.value.trim()));
+      el.setAttribute('aria-invalid', bad ? 'true' : 'false');
+      if (bad && ok) { el.focus(); ok = false; }
+    });
+    if (!ok) e.preventDefault();
+  });
+})();
+</script>"""

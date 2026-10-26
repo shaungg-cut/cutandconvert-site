@@ -59,7 +59,7 @@ def cta(title, sub, subject):
           <h2>{title}</h2>
           <p>{sub}</p>
         </div>
-        <a class="btn btn-ink" href="mailto:shaunmalinao@gmail.com?subject={subject}">Book a free audit</a>
+        <a class="btn btn-ink" href="#contact">Book a free audit</a>
       </div>
     </div>
   </section>
@@ -80,14 +80,18 @@ FOOTER = f"""
 </footer>
 """
 
+SERVICE = {"local": "local", "ecommerce": "ecommerce", "youtube": "youtube"}
+
 def page(path, title, desc, active, body, scripts=""):
     html = head(title, desc) + header(active) + "\n<main>\n" + body + "\n</main>\n" + FOOTER + scripts + "\n</body>\n</html>\n"
+    svc = SERVICE.get(active)
+    html = html.replace('href="#contact"', f'href="/contact/?service={svc}"' if svc else 'href="/contact/"')
     out = REPO / path
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html)
     print("wrote", out)
 
-for name in ["home", "local", "ecommerce", "youtube", "about"]:
+for name in ["home", "local", "ecommerce", "youtube", "about", "contact", "thanks"]:
     mod = {}
     exec((HERE / f"{name}.py").read_text(), {"MARQUEE": MARQUEE, "cta": cta}, mod)
     page(mod["PATH"], mod["TITLE"], mod["DESC"], mod["ACTIVE"], mod["BODY"], mod.get("SCRIPTS", ""))

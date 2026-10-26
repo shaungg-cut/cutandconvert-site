@@ -288,3 +288,33 @@ p { margin: 0; }
 .prose { display: flex; flex-direction: column; gap: 18px; }
 .prose h2 { font-size: clamp(32px, 4vw, 46px); margin-bottom: 6px; }
 .prose p { font-size: 18px; color: var(--muted); }
+
+/* Contact page */
+.contact-wrap { flex-direction: row !important; flex-wrap: wrap; align-items: flex-start !important; gap: 48px !important; }
+.contact-intro { flex: 1 1 360px; min-width: 0; gap: 22px; }
+.contact-intro .check-list { font-size: 17px; }
+.lead-form {
+  flex: 1 1 460px; min-width: 0; background: var(--white); border: 1px solid var(--line);
+  border-radius: 20px; padding: clamp(24px, 4vw, 40px); display: flex; flex-direction: column; gap: 18px;
+  box-shadow: 0 12px 40px rgba(22,33,62,.06);
+}
+.field-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; }
+.field { display: flex; flex-direction: column; gap: 6px; border: 0; padding: 0; margin: 0; min-width: 0; }
+.field label, .field legend { font-size: 14px; font-weight: 600; padding: 0; margin-bottom: 6px; }
+.optional { font-weight: 400; color: var(--muted); }
+.lead-form input[type=text], .lead-form input[type=email], .lead-form input[type=tel], .lead-form select, .lead-form textarea {
+  font: inherit; color: var(--ink); background: var(--white);
+  border: 1px solid #CFC8BC; border-radius: 10px; padding: 12px 14px; width: 100%; min-height: 48px;
+}
+.lead-form textarea { resize: vertical; }
+.lead-form input:focus, .lead-form select:focus, .lead-form textarea:focus { outline: 2px solid var(--coral); outline-offset: 1px; border-color: var(--coral); }
+.lead-form [aria-invalid="true"] { border-color: var(--coral-text); }
+.choice-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.choice { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #CFC8BC; border-radius: 999px; padding: 10px 16px; cursor: pointer; font-weight: 500 !important; margin: 0 !important; font-size: 15px !important; min-height: 44px; }
+.choice input { accent-color: var(--coral-text); width: 18px; height: 18px; margin: 0; }
+.choice:has(input:checked) { border-color: var(--ink); background: var(--sand); }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.btn-block { width: 100%; text-align: center; border: 0; font: inherit; font-weight: 600; cursor: pointer; padding: 16px 22px; }
+.form-note { font-size: 14px; text-align: center; }
+.form-note a { color: var(--coral-text); }
+.form-error { background: #FDECE8; color: #8A2412; border-radius: 10px; padding: 12px 14px; font-size: 15px; }
