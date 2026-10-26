@@ -83,19 +83,35 @@ p { margin: 0; }
 /* Brands I've worked on */
 .brands { border-bottom: 1px solid var(--line); }
 .brands .wrap { padding-top: 48px; padding-bottom: 52px; display: flex; flex-direction: column; align-items: center; gap: 28px; }
-.logo-wall {
-  list-style: none; margin: 0; padding: 0;
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
-  gap: 36px 56px; max-width: 1040px;
+.brands .wrap { max-width: none; padding-left: 0; padding-right: 0; }
+.marquee {
+  width: 100%; overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
 }
-.logo-wall li { display: flex; align-items: center; height: 48px; }
-.logo-wall img { height: 28px; width: auto; opacity: .78; transition: opacity .2s ease; }
-.logo-wall li.tall img { height: 44px; }
-.logo-wall img:hover { opacity: 1; }
+.logo-track {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; align-items: center; width: max-content;
+  animation: logo-slide 40s linear infinite;
+}
+.marquee:hover .logo-track { animation-play-state: paused; }
+.logo-track li { display: flex; align-items: center; height: 48px; padding: 0 32px; flex-shrink: 0; }
+.logo-track img { height: 28px; width: auto; max-width: none; opacity: .78; transition: opacity .2s ease; }
+.logo-track li.tall img { height: 44px; }
+.logo-track img:hover { opacity: 1; }
+@keyframes logo-slide {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
 @media (max-width: 700px) {
-  .logo-wall { gap: 24px 36px; }
-  .logo-wall img { height: 22px; }
-  .logo-wall li.tall img { height: 36px; }
+  .logo-track li { padding: 0 22px; }
+  .logo-track img { height: 22px; }
+  .logo-track li.tall img { height: 36px; }
+  .logo-track { animation-duration: 30s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-track { animation: none; flex-wrap: wrap; justify-content: center; width: auto; }
+  .logo-track li[aria-hidden="true"] { display: none; }
 }
 
 /* Sections */
