@@ -11,7 +11,7 @@ NAV = [
     ("/local/", "Local Business", "local"),
     ("/ecommerce/", "Ecommerce", "ecommerce"),
     ("/youtube-creative/", "YouTube Creative", "youtube"),
-    ("/#about", "About", "about"),
+    ("/about/", "About", "about"),
 ]
 
 def head(title, desc):
@@ -73,6 +73,7 @@ FOOTER = f"""
       <a href="/local/">Local Business</a>
       <a href="/ecommerce/">Ecommerce</a>
       <a href="/youtube-creative/">YouTube Creative</a>
+      <a href="/about/">About</a>
     </nav>
     <span>Google Ads &amp; YouTube Ads · San Diego, CA</span>
   </div>
@@ -86,7 +87,7 @@ def page(path, title, desc, active, body, scripts=""):
     out.write_text(html)
     print("wrote", out)
 
-for name in ["home", "local", "ecommerce", "youtube"]:
+for name in ["home", "local", "ecommerce", "youtube", "about"]:
     mod = {}
     exec((HERE / f"{name}.py").read_text(), {"MARQUEE": MARQUEE, "cta": cta}, mod)
     page(mod["PATH"], mod["TITLE"], mod["DESC"], mod["ACTIVE"], mod["BODY"], mod.get("SCRIPTS", ""))

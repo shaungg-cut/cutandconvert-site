@@ -100,17 +100,6 @@ BODY = f"""
     </div>
   </section>
 
-  <section class="section about">
-    <div class="wrap">
-      <img src="https://rollingpathstudios.com/images/shaun-malinao.jpg" alt="Shaun Malinao, founder of Cut &amp; Convert" loading="lazy" width="640" height="800">
-      <div class="about-copy" id="about">
-        <span class="eyebrow">About</span>
-        <h2>Media buyer by trade. Filmmaker at heart.</h2>
-        <p>I'm Shaun Malinao. For 9+ years I've run Google and YouTube ads for some of the fastest-growing DTC brands in the country, managing $500M+ in spend.</p>
-        <p>I've also spent 14+ years behind a camera, including filming weddings across San Diego with Rolling Path Studios. Cut &amp; Convert brings both together: campaigns built by a strategist, creative made by a filmmaker.</p>
-      </div>
-    </div>
-  </section>
 {cta("Let's see what's leaving money on the table.", "Free 30-minute audit of your Google and YouTube ads.", "Free%20audit%20request")}"""
 
 SCRIPTS = """

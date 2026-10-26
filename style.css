@@ -280,3 +280,11 @@ p { margin: 0; }
   .hero .wrap { padding-top: 48px; gap: 40px; }
   .section { padding: 64px 0; }
 }
+
+/* About page */
+.about-hero { flex-direction: row !important; flex-wrap: wrap; align-items: center !important; gap: 48px !important; }
+.about-hero .split-copy { flex: 999 1 420px; min-width: 0; gap: 22px; }
+.about-hero img { flex: 1 1 280px; min-width: 0; max-width: 380px; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 20px; }
+.prose { display: flex; flex-direction: column; gap: 18px; }
+.prose h2 { font-size: clamp(32px, 4vw, 46px); margin-bottom: 6px; }
+.prose p { font-size: 18px; color: var(--muted); }
