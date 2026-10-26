@@ -174,7 +174,7 @@ p { margin: 0; }
 
 /* Rotating hero word */
 .rotator-head { display: flex; flex-direction: column; }
-.rotator { display: grid; color: var(--coral-text); font-style: italic; }
+.rotator { display: grid; color: var(--coral-text); font-style: italic; overflow: hidden; padding-bottom: .08em; }
 .rotator-word {
   grid-area: 1 / 1; opacity: 0; transform: translateY(40%);
   transition: opacity .5s ease, transform .5s ease;
