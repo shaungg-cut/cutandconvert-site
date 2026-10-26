@@ -1,0 +1,125 @@
+PATH = "local/index.html"
+ACTIVE = "local"
+TITLE = "Local Business Marketing | Google Business Profile &amp; Local Ads | Cut &amp; Convert"
+DESC = "Get found by customers searching near you. Cut & Convert optimizes Google Business Profiles, local listings and geo-targeted Google Ads for San Diego businesses."
+
+BODY = f"""
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="pill">Local Business</span>
+      <h1>Get found by the people searching near you.</h1>
+      <p class="lede">When someone nearby searches for what you do, you should be the business they call. We optimize your local listings and target your Google Ads to your service area, so the right customers find you first.</p>
+      <div class="actions">
+        <a class="btn btn-coral" href="#contact">Get a free local audit</a>
+        <a class="btn btn-outline" href="#what">What we do</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="split-copy">
+        <span class="eyebrow">Why it matters</span>
+        <h2>Your customers are already searching.</h2>
+        <p class="muted">"Near me." "Open now." "Best in North Park." Local searches come from people who are ready to buy, call or book. If your listing is incomplete, inconsistent or buried, those customers go to the competitor down the street.</p>
+        <p class="muted">We make sure you show up in the three places that matter most on Google: the map results, the search results and the ads above them.</p>
+      </div>
+      <ul class="search-chips" aria-label="Example local searches">
+        <li>plumber near me</li>
+        <li>med spa La Jolla</li>
+        <li>dentist open Saturday</li>
+        <li>best tacos North Park</li>
+        <li>emergency AC repair</li>
+        <li>personal trainer Encinitas</li>
+        <li>auto detailing near me</li>
+        <li>family photographer San Diego</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section tinted" id="what">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What we do</h2>
+        <p>Everything it takes to be found locally, from your free listings to paid ads.</p>
+      </div>
+      <div class="cards cards-3">
+        <article class="card">
+          <h3>Google Business Profile</h3>
+          <p class="muted">We complete and optimize your profile with the right categories, services, photos, hours and posts, so you show up in the map results for the searches that matter.</p>
+        </article>
+        <article class="card">
+          <h3>Local listings</h3>
+          <p class="muted">Your name, address and phone number matched everywhere customers look: Apple Maps, Bing, Yelp and the directories Google checks to trust your business.</p>
+        </article>
+        <article class="card">
+          <h3>Reviews</h3>
+          <p class="muted">A simple system for asking happy customers for reviews and responding to every one, because ratings move rankings and win the click.</p>
+        </article>
+        <article class="card">
+          <h3>Geo-targeted Search ads</h3>
+          <p class="muted">Google Ads aimed only at your service area, by zip code or radius, during the hours you can pick up the phone. No paying for clicks from people you can't serve.</p>
+        </article>
+        <article class="card">
+          <h3>Local Services Ads</h3>
+          <p class="muted">For eligible service businesses, the Google Guaranteed ads at the very top of the page, where you pay per lead instead of per click.</p>
+        </article>
+        <article class="card">
+          <h3>Call and lead tracking</h3>
+          <p class="muted">Every call, form and booking tracked back to its source, so you know exactly which searches and areas bring in customers.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Target your area. Reach the right customers.</h2>
+        <p>Local marketing works when it's precise. We focus your budget on the places and searches that turn into real business.</p>
+      </div>
+      <div class="feature-list">
+        <div class="feature"><span class="num">01</span><div><h3>Your service area only</h3><p class="muted">Set the neighborhoods, cities or radius you actually serve, and exclude the rest.</p></div></div>
+        <div class="feature"><span class="num">02</span><div><h3>High-intent searches</h3><p class="muted">Bid on the searches that signal someone is ready to buy, like "near me," "open now" and "price," and filter out the ones that waste money.</p></div></div>
+        <div class="feature"><span class="num">03</span><div><h3>When you're open</h3><p class="muted">Schedule ads around your business hours so calls come in when someone can answer.</p></div></div>
+        <div class="feature"><span class="num">04</span><div><h3>Built for mobile</h3><p class="muted">Most local searches happen on a phone. Click-to-call, directions and fast pages make it easy to reach you.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section how">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <div class="steps steps-4">
+        <div class="step"><span class="num">01</span><h3>Audit</h3><p>We check your Google Business Profile, listings, reviews and any ads you're running, and show you where you're missing customers.</p></div>
+        <div class="step"><span class="num">02</span><h3>Fix</h3><p>We clean up and optimize your listings so Google trusts and ranks your business.</p></div>
+        <div class="step"><span class="num">03</span><h3>Launch</h3><p>We launch Search ads and Local Services Ads targeted to your area and your best services.</p></div>
+        <div class="step"><span class="num">04</span><h3>Grow</h3><p>We track every call and lead, cut what doesn't work and put more behind what does.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap narrow">
+      <div class="section-head"><h2>Common questions</h2></div>
+      <div class="faq">
+        <details>
+          <summary>Do I need a new website?</summary>
+          <p class="muted">Usually not. Your Google Business Profile does a lot of the work on its own. If your site is slowing down calls or bookings, we'll tell you what to fix.</p>
+        </details>
+        <details>
+          <summary>How fast will I see results?</summary>
+          <p class="muted">Ads can start bringing in calls within days of launch. Listing and review improvements build over weeks, and keep paying off long after.</p>
+        </details>
+        <details>
+          <summary>What kinds of businesses do you work with?</summary>
+          <p class="muted">Service and storefront businesses that customers find through local search: home services, health and wellness, restaurants, fitness, salons, auto and more.</p>
+        </details>
+        <details>
+          <summary>Am I locked into a long contract?</summary>
+          <p class="muted">[YOUR TERMS]</p>
+        </details>
+      </div>
+    </div>
+  </section>
+{cta("Find out how customers find you.", "Free local visibility audit of your Google listing and ads.", "Free%20local%20audit")}"""
