@@ -1,0 +1,10 @@
+# Force HTTPS and the non-www domain
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://cutandconvert.com%{REQUEST_URI} [L,R=301]
+
+# Tell browsers to always use HTTPS for this site
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>
