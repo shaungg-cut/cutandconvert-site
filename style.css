@@ -318,3 +318,40 @@ p { margin: 0; }
 .form-note { font-size: 14px; text-align: center; }
 .form-note a { color: var(--coral-text); }
 .form-error { background: #FDECE8; color: #8A2412; border-radius: 10px; padding: 12px 14px; font-size: 15px; }
+
+/* How it works: illustrative charts */
+.step-viz {
+  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px; padding: 18px 18px 12px; margin-bottom: 14px;
+}
+.viz { width: 100%; height: auto; display: block; overflow: visible; }
+.viz text { font-family: var(--sans); font-size: 12px; fill: rgba(255,255,255,.72); }
+.viz-track rect { fill: rgba(255,255,255,.1); }
+.viz-bar { fill: rgba(255,255,255,.85); transform-box: fill-box; transform-origin: left center; transition: transform .9s cubic-bezier(.2,.7,.2,1); }
+.viz-bar.is-flag, .viz-frame.is-hook { fill: var(--coral); }
+.viz-frame { fill: rgba(255,255,255,.14); }
+.viz-play { fill: var(--ink); }
+.viz-cut { stroke: var(--coral); stroke-width: 2; }
+.viz-cut-head { fill: var(--coral); }
+.viz-wave { fill: rgba(255,255,255,.55); transform-box: fill-box; transform-origin: center; transition: transform .6s ease; }
+.viz-grid line { stroke: rgba(255,255,255,.08); }
+.viz-axis { stroke: rgba(255,255,255,.3); }
+.viz-area { fill: rgba(255,90,60,.16); transition: opacity 1s ease .6s; }
+.viz-line { fill: none; stroke: var(--coral); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 400; stroke-dashoffset: 0; transition: stroke-dashoffset 1.6s ease; }
+.viz-line.is-control { stroke: rgba(255,255,255,.55); stroke-width: 2; stroke-dasharray: 5 6; transition: none; }
+.viz-dot { fill: var(--coral); stroke: var(--ink); stroke-width: 2; transition: opacity .4s ease 1.4s; }
+.viz-key { display: flex; align-items: center; gap: 8px; font-size: 12px; color: rgba(255,255,255,.7); margin-top: 8px; flex-wrap: wrap; }
+.key-dot { width: 10px; height: 10px; border-radius: 3px; background: rgba(255,255,255,.85); margin-left: 6px; }
+.key-dot:first-child { margin-left: 0; }
+.key-dot.is-flag { background: var(--coral); }
+.key-line { width: 18px; border-top: 2px dashed rgba(255,255,255,.55); margin-left: 6px; }
+
+/* Animate in when scrolled into view (only when JS is running) */
+.viz-anim .how-viz:not(.in-view) .viz-bar { transform: scaleX(0); }
+.viz-anim .how-viz:not(.in-view) .viz-wave { transform: scaleY(.15); }
+.viz-anim .how-viz:not(.in-view) .viz-line:not(.is-control) { stroke-dashoffset: 400; }
+.viz-anim .how-viz:not(.in-view) .viz-area,
+.viz-anim .how-viz:not(.in-view) .viz-dot { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .viz-bar, .viz-wave, .viz-line, .viz-area, .viz-dot { transition: none !important; }
+}

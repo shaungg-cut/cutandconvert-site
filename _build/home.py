@@ -71,13 +71,49 @@ BODY = f"""
     </div>
   </section>
 
-  <section class="section how">
+  <section class="section how how-viz">
     <div class="wrap">
       <h2>How it works</h2>
       <div class="steps">
-        <div class="step"><span class="num">01</span><h3>Audit</h3><p>A free look at your Google Ads account, tracking and creative. You get a clear list of what to fix first.</p></div>
-        <div class="step"><span class="num">02</span><h3>Cut</h3><p>We rebuild the campaigns and the creative together, so your ads and videos tell one story.</p></div>
-        <div class="step"><span class="num">03</span><h3>Convert</h3><p>Test, measure what is truly incremental, and scale what works. Weekly reporting in plain English.</p></div>
+        <div class="step"><div class="step-viz" aria-hidden="true">
+            <svg viewBox="0 0 280 140" class="viz">
+              <g class="viz-labels">
+                <text x="0" y="26">Tracking</text><text x="0" y="56">Search</text><text x="0" y="86">Creative</text><text x="0" y="116">Feed</text>
+              </g>
+              <g class="viz-track"><rect x="78" y="17" width="196" height="12" rx="6"/><rect x="78" y="47" width="196" height="12" rx="6"/><rect x="78" y="77" width="196" height="12" rx="6"/><rect x="78" y="107" width="196" height="12" rx="6"/></g>
+              <rect class="viz-bar is-flag" x="78" y="17" width="58" height="12" rx="6"/>
+              <rect class="viz-bar" x="78" y="47" width="150" height="12" rx="6" style="transition-delay:.12s"/>
+              <rect class="viz-bar is-flag" x="78" y="77" width="84" height="12" rx="6" style="transition-delay:.24s"/>
+              <rect class="viz-bar" x="78" y="107" width="128" height="12" rx="6" style="transition-delay:.36s"/>
+            </svg>
+            <p class="viz-key"><span class="key-dot is-flag"></span>Fix first <span class="key-dot"></span>Healthy</p>
+          </div><span class="num">01</span><h3>Audit</h3><p>A free look at your Google Ads account, tracking and creative. You get a clear list of what to fix first.</p></div>
+        <div class="step"><div class="step-viz" aria-hidden="true">
+            <svg viewBox="0 0 280 140" class="viz">
+              <rect class="viz-frame is-hook" x="8" y="14" width="46" height="56" rx="6"/>
+              <rect class="viz-frame" x="60" y="14" width="46" height="56" rx="6"/>
+              <rect class="viz-frame" x="112" y="14" width="46" height="56" rx="6"/>
+              <rect class="viz-frame is-hook" x="168" y="14" width="46" height="56" rx="6"/>
+              <rect class="viz-frame" x="220" y="14" width="46" height="56" rx="6"/>
+              <path class="viz-play" d="M25 33 L39 42 L25 51 Z"/>
+              <line class="viz-cut" x1="163" y1="6" x2="163" y2="128"/>
+              <path class="viz-cut-head" d="M157 4 h12 l-6 8 z"/>
+              <rect class="viz-wave" x="8" y="98" width="4" height="12" rx="2" style="transition-delay:0.00s"/><rect class="viz-wave" x="15" y="94" width="4" height="20" rx="2" style="transition-delay:0.02s"/><rect class="viz-wave" x="22" y="88" width="4" height="32" rx="2" style="transition-delay:0.04s"/><rect class="viz-wave" x="29" y="95" width="4" height="18" rx="2" style="transition-delay:0.06s"/><rect class="viz-wave" x="36" y="84" width="4" height="40" rx="2" style="transition-delay:0.08s"/><rect class="viz-wave" x="43" y="90" width="4" height="28" rx="2" style="transition-delay:0.10s"/><rect class="viz-wave" x="50" y="80" width="4" height="48" rx="2" style="transition-delay:0.12s"/><rect class="viz-wave" x="57" y="92" width="4" height="24" rx="2" style="transition-delay:0.14s"/><rect class="viz-wave" x="64" y="96" width="4" height="16" rx="2" style="transition-delay:0.16s"/><rect class="viz-wave" x="71" y="86" width="4" height="36" rx="2" style="transition-delay:0.18s"/><rect class="viz-wave" x="78" y="78" width="4" height="52" rx="2" style="transition-delay:0.20s"/><rect class="viz-wave" x="85" y="89" width="4" height="30" rx="2" style="transition-delay:0.22s"/><rect class="viz-wave" x="92" y="94" width="4" height="20" rx="2" style="transition-delay:0.24s"/><rect class="viz-wave" x="99" y="82" width="4" height="44" rx="2" style="transition-delay:0.26s"/><rect class="viz-wave" x="106" y="87" width="4" height="34" rx="2" style="transition-delay:0.28s"/><rect class="viz-wave" x="113" y="95" width="4" height="18" rx="2" style="transition-delay:0.30s"/><rect class="viz-wave" x="120" y="91" width="4" height="26" rx="2" style="transition-delay:0.32s"/><rect class="viz-wave" x="127" y="83" width="4" height="42" rx="2" style="transition-delay:0.34s"/><rect class="viz-wave" x="134" y="93" width="4" height="22" rx="2" style="transition-delay:0.36s"/><rect class="viz-wave" x="141" y="97" width="4" height="14" rx="2" style="transition-delay:0.38s"/><rect class="viz-wave" x="148" y="88" width="4" height="32" rx="2" style="transition-delay:0.40s"/><rect class="viz-wave" x="155" y="80" width="4" height="48" rx="2" style="transition-delay:0.42s"/><rect class="viz-wave" x="162" y="92" width="4" height="24" rx="2" style="transition-delay:0.44s"/><rect class="viz-wave" x="169" y="95" width="4" height="18" rx="2" style="transition-delay:0.46s"/><rect class="viz-wave" x="176" y="90" width="4" height="28" rx="2" style="transition-delay:0.48s"/><rect class="viz-wave" x="183" y="85" width="4" height="38" rx="2" style="transition-delay:0.50s"/><rect class="viz-wave" x="190" y="96" width="4" height="16" rx="2" style="transition-delay:0.52s"/><rect class="viz-wave" x="197" y="93" width="4" height="22" rx="2" style="transition-delay:0.54s"/><rect class="viz-wave" x="204" y="98" width="4" height="12" rx="2" style="transition-delay:0.56s"/><rect class="viz-wave" x="211" y="94" width="4" height="20" rx="2" style="transition-delay:0.58s"/><rect class="viz-wave" x="218" y="89" width="4" height="30" rx="2" style="transition-delay:0.60s"/><rect class="viz-wave" x="225" y="96" width="4" height="16" rx="2" style="transition-delay:0.62s"/><rect class="viz-wave" x="232" y="99" width="4" height="10" rx="2" style="transition-delay:0.64s"/><rect class="viz-wave" x="239" y="95" width="4" height="18" rx="2" style="transition-delay:0.66s"/><rect class="viz-wave" x="246" y="92" width="4" height="24" rx="2" style="transition-delay:0.68s"/><rect class="viz-wave" x="253" y="98" width="4" height="12" rx="2" style="transition-delay:0.70s"/><rect class="viz-wave" x="260" y="100" width="4" height="8" rx="2" style="transition-delay:0.72s"/>
+            </svg>
+            <p class="viz-key"><span class="key-dot is-flag"></span>Hooks <span class="key-dot"></span>Edit timeline</p>
+          </div><span class="num">02</span><h3>Cut</h3><p>We rebuild the campaigns and the creative together, so your ads and videos tell one story.</p></div>
+        <div class="step"><div class="step-viz" aria-hidden="true">
+            <svg viewBox="0 0 280 140" class="viz">
+              <g class="viz-grid"><line x1="10" y1="30" x2="272" y2="30"/><line x1="10" y1="66" x2="272" y2="66"/><line x1="10" y1="102" x2="272" y2="102"/></g>
+              <path class="viz-area" d="M10 112 C60 108 90 98 130 84 S210 44 272 18 L272 126 L10 126 Z"/>
+              <path class="viz-line is-control" d="M10 112 C80 110 160 106 272 100"/>
+              <path class="viz-line" d="M10 112 C60 108 90 98 130 84 S210 44 272 18"/>
+              <circle class="viz-dot" cx="130" cy="84" r="4"/>
+              <circle class="viz-dot" cx="272" cy="18" r="5"/>
+              <line class="viz-axis" x1="10" y1="126" x2="272" y2="126"/>
+            </svg>
+            <p class="viz-key"><span class="key-dot is-flag"></span>With Cut &amp; Convert <span class="key-line"></span>Holdout</p>
+          </div><span class="num">03</span><h3>Convert</h3><p>Test, measure what is truly incremental, and scale what works. Weekly reporting in plain English.</p></div>
       </div>
     </div>
   </section>
@@ -103,6 +139,18 @@ BODY = f"""
 {cta("Let's see what's leaving money on the table.", "Free 30-minute audit of your Google and YouTube ads.", "Free%20audit%20request")}"""
 
 SCRIPTS = """
+<script>
+(function () {
+  var root = document.documentElement;
+  var box = document.querySelector('.how-viz');
+  if (!box || !('IntersectionObserver' in window)) return;
+  root.classList.add('viz-anim');
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { box.classList.add('in-view'); io.disconnect(); } });
+  }, { threshold: 0.3 });
+  io.observe(box);
+})();
+</script>
 <script>
 (function () {
   var words = document.querySelectorAll('.rotator-word');
