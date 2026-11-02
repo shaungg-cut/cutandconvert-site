@@ -59,7 +59,7 @@ def cta(title, sub, subject):
       <p>{sub}</p>
       <div class="cta-actions">
         <a class="btn btn-coral btn-lg" href="#contact">Get your free audit</a>
-        <a class="btn btn-outline btn-lg" href="mailto:shaunmalinao@gmail.com?subject={subject}">Email me directly</a>
+        <a class="btn btn-outline btn-lg" href="mailto:shaunmalinao@gmail.com?subject={subject}">Email us directly</a>
       </div>
     </div>
   </section>
