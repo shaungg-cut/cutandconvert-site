@@ -4,7 +4,11 @@ TITLE = "Local Business Marketing | Google Business Profile &amp; Local Ads | Cu
 DESC = "Get found by customers searching near you. Cut & Convert optimizes Google Business Profiles, local listings and geo-targeted Google Ads for San Diego businesses."
 
 BODY = f"""
-  <section class="page-hero">
+  <section class="page-hero has-photo">
+    <picture class="hero-photo">
+      <source type="image/webp" srcset="/images/local-hero-1100.webp 1100w, /images/local-hero-1920.webp 1920w" sizes="100vw">
+      <img src="/images/local-hero-1600.jpg" alt="" width="1600" height="800" fetchpriority="high" decoding="async">
+    </picture>
     <div class="wrap">
       <span class="pill">Local Business</span>
       <h1>Get found by the people searching near you.</h1>

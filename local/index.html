@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=7f805d8d">
+  <link rel="stylesheet" href="/style.css?v=d3481d0f">
 </head>
 <body>
 <header class="site-header">
@@ -28,7 +28,11 @@
 
 <main>
 
-  <section class="page-hero">
+  <section class="page-hero has-photo">
+    <picture class="hero-photo">
+      <source type="image/webp" srcset="/images/local-hero-1100.webp 1100w, /images/local-hero-1920.webp 1920w" sizes="100vw">
+      <img src="/images/local-hero-1600.jpg" alt="" width="1600" height="800" fetchpriority="high" decoding="async">
+    </picture>
     <div class="wrap">
       <span class="pill">Local Business</span>
       <h1>Get found by the people searching near you.</h1>
