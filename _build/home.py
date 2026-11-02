@@ -7,7 +7,7 @@ BODY = f"""
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <span class="pill">Google Ads &amp; YouTube Ads · San Diego</span>
+        <span class="pill">Google Ads &amp; YouTube Ads · San Diego based, nationwide reach</span>
         <h1 class="rotator-head">
           <span class="sr-only">We drive DTC sales, leads and performance creative.</span>
           <span aria-hidden="true">We drive</span>
@@ -17,7 +17,7 @@ BODY = f"""
             <span class="rotator-word">performance creative.</span>
           </span>
         </h1>
-        <p class="lede">Big-brand Google and YouTube media buying plus a filmmaker's eye. Built for ecommerce brands and local businesses ready to grow.</p>
+        <p class="lede">Big-brand Google and YouTube media buying plus a filmmaker's eye. Rooted in San Diego, growing ecommerce brands and local businesses from coast to coast.</p>
         <div class="actions">
           <a class="btn btn-coral" href="#contact">Book a free audit</a>
           <a class="btn btn-outline" href="#paths">Explore services</a>
