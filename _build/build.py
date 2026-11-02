@@ -1,9 +1,10 @@
 """Builds the Cut & Convert static pages into the site repo.
 Usage: python3 build.py <repo_dir>
 """
-import sys, pathlib
+import sys, pathlib, hashlib
 
 REPO = pathlib.Path(sys.argv[1])
+CSS_V = hashlib.md5((REPO / "style.css").read_bytes()).hexdigest()[:8]
 HERE = pathlib.Path(__file__).parent
 MARQUEE = (HERE / "marquee.html").read_text().replace('src="logos/', 'src="/logos/')
 
@@ -27,7 +28,7 @@ def head(title, desc):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style.css?v={CSS_V}">
 </head>
 <body>
 """
