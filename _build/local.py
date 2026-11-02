@@ -37,6 +37,85 @@ BODY = f"""
     </div>
   </section>
 
+  <section class="section serp-section">
+    <div class="wrap split">
+      <div class="split-copy">
+        <span class="eyebrow">Two spots that win the call</span>
+        <h2>Own the top of the page.</h2>
+        <p class="muted">When someone nearby searches for what you do, Google shows two things before anything else: the ads at the very top, and the map pack of three local businesses right below. We put you in both.</p>
+        <div class="serp-legend">
+          <div class="serp-legend-item">
+            <span class="serp-tag">1</span>
+            <div><h3>Google Ads</h3><p class="muted">Search and Local Services Ads, targeted to your service area and your best services, so you're the first result people see.</p></div>
+          </div>
+          <div class="serp-legend-item">
+            <span class="serp-tag">2</span>
+            <div><h3>The map pack</h3><p class="muted">An optimized Google Business Profile, consistent listings and steady reviews, so you rank in the top three on the map.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <figure class="serp" aria-label="Illustration of a local Google search showing an ad and the map pack">
+        <div class="serp-search">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <span>plumber near me</span>
+        </div>
+
+        <div class="serp-ad">
+          <span class="serp-tag serp-tag-float">1</span>
+          <p class="serp-sponsored">Sponsored</p>
+          <p class="serp-url">yourbusiness.com</p>
+          <p class="serp-title">Your Business | Same-Day Service</p>
+          <p class="serp-desc">Licensed and insured. Serving San Diego and surrounding areas. Call for a free quote.</p>
+          <div class="serp-ad-links"><span>Call now</span><span>Get a quote</span><span>Reviews</span></div>
+        </div>
+
+        <div class="serp-pack">
+          <span class="serp-tag serp-tag-float">2</span>
+          <svg class="serp-map" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="400" height="150" fill="#E9EEE4"/>
+            <path d="M0 40 L400 70" stroke="#FFFFFF" stroke-width="10"/>
+            <path d="M120 0 L170 150" stroke="#FFFFFF" stroke-width="12"/>
+            <path d="M0 120 C120 100 260 130 400 105" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+            <path d="M300 0 L280 150" stroke="#FFFFFF" stroke-width="7"/>
+            <rect x="200" y="12" width="60" height="38" rx="6" fill="#D5E3CB"/>
+            <path d="M330 110 C350 95 390 100 400 92 L400 150 L320 150 Z" fill="#CFE0EC"/>
+            <g class="serp-pin is-you" transform="translate(150 58)"><path d="M0 0c-9 0-16 7-16 16 0 12 16 26 16 26s16-14 16-26C16 7 9 0 0 0z"/><circle cy="16" r="6" fill="#FFFFFF"/></g>
+            <g class="serp-pin" transform="translate(255 80)"><path d="M0 0c-7 0-12 5-12 12 0 9 12 20 12 20s12-11 12-20C12 5 7 0 0 0z"/><circle cy="12" r="4.5" fill="#FFFFFF"/></g>
+            <g class="serp-pin" transform="translate(60 72)"><path d="M0 0c-7 0-12 5-12 12 0 9 12 20 12 20s12-11 12-20C12 5 7 0 0 0z"/><circle cy="12" r="4.5" fill="#FFFFFF"/></g>
+          </svg>
+          <ul class="serp-listings">
+            <li class="is-you">
+              <div>
+                <p class="serp-name">Your Business</p>
+                <p class="serp-meta"><span class="serp-stars" aria-label="5 stars">★★★★★</span> Plumber · North Park</p>
+                <p class="serp-open">Open · Closes 7 PM</p>
+              </div>
+              <div class="serp-actions"><span>Call</span><span>Directions</span></div>
+            </li>
+            <li>
+              <div>
+                <p class="serp-name">Competitor A</p>
+                <p class="serp-meta"><span class="serp-stars is-dim" aria-label="4 stars">★★★★☆</span> Plumber · Hillcrest</p>
+                <p class="serp-open">Open · Closes 5 PM</p>
+              </div>
+              <div class="serp-actions"><span>Call</span><span>Directions</span></div>
+            </li>
+            <li>
+              <div>
+                <p class="serp-name">Competitor B</p>
+                <p class="serp-meta"><span class="serp-stars is-dim" aria-label="4 stars">★★★★☆</span> Plumber · Mission Valley</p>
+                <p class="serp-open is-closed">Closed · Opens 8 AM</p>
+              </div>
+              <div class="serp-actions"><span>Call</span><span>Directions</span></div>
+            </li>
+          </ul>
+        </div>
+        <figcaption class="serp-caption">Illustration of a local search results page</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <section class="section tinted" id="what">
     <div class="wrap">
       <div class="section-head">
