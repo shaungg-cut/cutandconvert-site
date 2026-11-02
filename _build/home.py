@@ -31,7 +31,6 @@ BODY = f"""
     <div class="wrap">
       <div><p class="stat">$500M+</p><p class="muted">in ad spend managed</p></div>
       <div><p class="stat">9+ years</p><p class="muted">running Google and YouTube ads</p></div>
-      <div><p class="stat">$300K/day</p><p class="muted">ad spend scaled, CPA held</p></div>
       <div><p class="stat">15+ years</p><p class="muted">of video experience</p></div>
     </div>
   </section>
