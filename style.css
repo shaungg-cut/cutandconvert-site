@@ -463,3 +463,9 @@ p { margin: 0; }
   .section.is-right .prose h2 { text-align: left; align-items: flex-start; margin-left: 0; }
   .section.is-right .split { flex-direction: column; }
 }
+
+/* Keep inner panels visible on sand sections */
+.tinted .serp, .tinted .ratio-demo { background: var(--white); }
+.tinted .serp-tag-float { box-shadow: 0 0 0 4px var(--white); }
+.cta-big.tinted { background: var(--sand); border-top: 0; }
+.tinted .compare-col:not(.is-good), .tinted .tile, .tinted .result { background: var(--white); }

@@ -85,11 +85,31 @@ SERVICE = {"local": "local", "ecommerce": "ecommerce", "youtube": "youtube"}
 def page(path, title, desc, active, body, scripts=""):
     html = head(title, desc) + header(active) + "\n<main>\n" + body + "\n</main>\n" + FOOTER + scripts + "\n</body>\n</html>\n"
     import re
-    n = [0]
-    def alt(m):
-        n[0] += 1
-        return m.group(0) + (" is-right" if n[0] % 2 == 1 else "")
-    html = re.sub(r'<section class="section(?: [a-z-]+)*', alt, html)
+    state = {"prev": None, "n": 0}
+    def fix(m):
+        cls = m.group(1).split()
+        if "page-hero" in cls:
+            bg = "dark" if "has-photo" in cls else "sand"
+        elif "proof" in cls:
+            bg = "sand"
+        elif "brands" in cls:
+            bg = "white"
+        elif "how" in cls:
+            bg = "dark"
+        elif "section" in cls or "cta-big" in cls:
+            cls = [c for c in cls if c != "tinted"]
+            bg = "sand" if state["prev"] == "white" else "white"
+            if bg == "sand":
+                cls.append("tinted")
+        else:
+            bg = state["prev"]
+        if "section" in cls:
+            state["n"] += 1
+            if state["n"] % 2 == 1:
+                cls.append("is-right")
+        state["prev"] = bg
+        return '<section class="' + " ".join(cls) + '"'
+    html = re.sub(r'<section class="([^"]*)"', fix, html)
     svc = SERVICE.get(active)
     html = html.replace('href="#contact"', f'href="/contact/?service={svc}"' if svc else 'href="/contact/"')
     out = REPO / path
