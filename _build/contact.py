@@ -45,9 +45,9 @@ BODY = """
         <fieldset class="field">
           <legend>What can we help with?</legend>
           <div class="choice-row">
-            <label class="choice"><input type="checkbox" name="services[]" value="Ecommerce" data-service="ecommerce"><span>Ecommerce</span></label>
-            <label class="choice"><input type="checkbox" name="services[]" value="Local Business" data-service="local"><span>Local Business</span></label>
-            <label class="choice"><input type="checkbox" name="services[]" value="YouTube Creative" data-service="youtube"><span>YouTube Creative</span></label>
+            <label class="choice"><input type="checkbox" name="services[]" value="Ecommerce" data-service="ecommerce"><span class="choice-box" aria-hidden="true"></span><span>Ecommerce</span></label>
+            <label class="choice"><input type="checkbox" name="services[]" value="Local Business" data-service="local"><span class="choice-box" aria-hidden="true"></span><span>Local Business</span></label>
+            <label class="choice"><input type="checkbox" name="services[]" value="YouTube Creative" data-service="youtube"><span class="choice-box" aria-hidden="true"></span><span>YouTube Creative</span></label>
           </div>
         </fieldset>
 
