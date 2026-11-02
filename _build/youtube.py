@@ -131,4 +131,4 @@ BODY = f"""
       </div>
     </div>
   </section>
-{cta("Have videos that aren't selling?", "Send us a few. We'll show you how we'd cut them for YouTube.", "Free%20YouTube%20creative%20audit")}"""
+{cta("Let's turn your videos into <em>sales</em>.", "Send a few videos that aren't performing. We'll show you how we'd cut them for YouTube.", "Free%20YouTube%20creative%20audit")}"""

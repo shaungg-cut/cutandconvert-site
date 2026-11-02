@@ -50,4 +50,4 @@ BODY = f"""
   </section>
 
 {MARQUEE}
-{cta("Let's work together.", "Free 30-minute audit of your Google and YouTube ads.", "Free%20audit%20request")}"""
+{cta("Let's grow your business, <em>together</em>.", "Start with a free audit of your Google and YouTube ads. A real review, a 30-minute call, and a clear plan.", "Free%20audit%20request")}"""

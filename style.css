@@ -355,3 +355,13 @@ p { margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   .viz-bar, .viz-wave, .viz-line, .viz-area, .viz-dot { transition: none !important; }
 }
+
+/* Big closing CTA */
+.cta-big { border-top: 1px solid var(--line); background: var(--white); }
+.cta-big .wrap { padding-top: clamp(80px, 11vw, 140px); padding-bottom: clamp(80px, 11vw, 140px); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 26px; }
+.cta-big h2 { font-size: clamp(42px, 6.4vw, 82px); line-height: 1.02; letter-spacing: -0.02em; max-width: 16ch; }
+.cta-big h2 em { color: var(--coral-text); }
+.cta-big p { font-size: clamp(17px, 1.6vw, 20px); color: var(--muted); max-width: 38rem; }
+.cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 8px; }
+.btn-lg { padding: 18px 32px; border-radius: 999px; font-size: 16px; }
+.btn-outline.btn-lg { border-color: var(--ink); }

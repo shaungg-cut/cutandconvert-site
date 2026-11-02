@@ -52,14 +52,13 @@ def header(active):
 
 def cta(title, sub, subject):
     return f"""
-  <section class="section" id="contact">
+  <section class="cta-big" id="contact">
     <div class="wrap">
-      <div class="cta-box">
-        <div>
-          <h2>{title}</h2>
-          <p>{sub}</p>
-        </div>
-        <a class="btn btn-ink" href="#contact">Book a free audit</a>
+      <h2>{title}</h2>
+      <p>{sub}</p>
+      <div class="cta-actions">
+        <a class="btn btn-coral btn-lg" href="#contact">Get your free audit</a>
+        <a class="btn btn-outline btn-lg" href="mailto:shaunmalinao@gmail.com?subject={subject}">Email me directly</a>
       </div>
     </div>
   </section>

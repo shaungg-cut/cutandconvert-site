@@ -136,7 +136,7 @@ BODY = f"""
     </div>
   </section>
 
-{cta("Let's see what's leaving money on the table.", "Free 30-minute audit of your Google and YouTube ads.", "Free%20audit%20request")}"""
+{cta("Let's grow your business, and your <em>bottom line</em>.", "Start with a free audit of your Google and YouTube ads, built on your numbers. You'll get a clear list of what to fix first.", "Free%20audit%20request")}"""
 
 SCRIPTS = """
 <script>

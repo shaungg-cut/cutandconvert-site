@@ -122,4 +122,4 @@ BODY = f"""
       </div>
     </div>
   </section>
-{cta("Find out how customers find you.", "Free local visibility audit of your Google listing and ads.", "Free%20local%20audit")}"""
+{cta("Let's get you found, and your <em>phone ringing</em>.", "Start with a free audit of your Google listing and local ads. You'll see exactly where nearby customers are slipping away.", "Free%20local%20audit")}"""
