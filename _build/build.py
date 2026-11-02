@@ -84,6 +84,12 @@ SERVICE = {"local": "local", "ecommerce": "ecommerce", "youtube": "youtube"}
 
 def page(path, title, desc, active, body, scripts=""):
     html = head(title, desc) + header(active) + "\n<main>\n" + body + "\n</main>\n" + FOOTER + scripts + "\n</body>\n</html>\n"
+    import re
+    n = [0]
+    def alt(m):
+        n[0] += 1
+        return m.group(0) + (" is-right" if n[0] % 2 == 1 else "")
+    html = re.sub(r'<section class="section(?: [a-z-]+)*', alt, html)
     svc = SERVICE.get(active)
     html = html.replace('href="#contact"', f'href="/contact/?service={svc}"' if svc else 'href="/contact/"')
     out = REPO / path

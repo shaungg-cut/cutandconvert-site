@@ -447,3 +447,19 @@ p { margin: 0; }
 @media (max-width: 700px) {
   .page-hero.has-photo::before { background: linear-gradient(180deg, rgba(22,33,62,.62) 0%, rgba(22,33,62,.78) 45%, rgba(22,33,62,.86) 100%); }
 }
+
+/* Alternating section headline alignment */
+.section.is-right .section-head { margin-left: auto; text-align: right; align-items: flex-end; }
+.section.is-right.how > .wrap > h2 { text-align: right; }
+.section.is-right .split { flex-direction: row-reverse; }
+.section.is-right .split > .split-copy:first-child { text-align: right; align-items: flex-end; }
+.section.is-right .split > .split-copy:first-child .check-list,
+.section.is-right .split > .split-copy:first-child .serp-legend { text-align: left; align-self: stretch; }
+.section.is-right .prose h2 { text-align: right; }
+@media (max-width: 700px) {
+  .section.is-right .section-head,
+  .section.is-right.how > .wrap > h2,
+  .section.is-right .split > .split-copy:first-child,
+  .section.is-right .prose h2 { text-align: left; align-items: flex-start; margin-left: 0; }
+  .section.is-right .split { flex-direction: column; }
+}
