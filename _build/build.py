@@ -103,10 +103,6 @@ def page(path, title, desc, active, body, scripts=""):
                 cls.append("tinted")
         else:
             bg = state["prev"]
-        if "section" in cls:
-            state["n"] += 1
-            if state["n"] % 2 == 1:
-                cls.append("is-right")
         state["prev"] = bg
         return '<section class="' + " ".join(cls) + '"'
     html = re.sub(r'<section class="([^"]*)"', fix, html)
