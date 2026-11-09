@@ -511,3 +511,20 @@ p { margin: 0; }
 .disp-meta { font-size: 11px; color: #70757a; margin-top: 4px !important; }
 .disp-cta { flex-shrink: 0; background: #1a73e8; color: #fff; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 8px 12px; }
 @media (max-width: 700px) { .disp-card { width: 230px; } }
+
+/* Ecommerce: product feed section */
+.feed-split { align-items: center; }
+.feed-demo { margin: 0; display: flex; flex-direction: column; align-items: stretch; gap: 10px; background: var(--white); border: 1px solid var(--line); border-radius: 20px; padding: clamp(20px, 3vw, 32px); font-family: Arial, Helvetica, sans-serif; }
+.tinted .feed-demo { border-color: transparent; }
+.feed-row { border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.feed-row p { margin: 0; }
+.feed-row.is-before { background: #F3F1EC; }
+.feed-row.is-after { background: #FFF4F1; outline: 2px solid var(--coral); outline-offset: -2px; }
+.feed-tag { align-self: flex-start; font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.is-after .feed-tag { color: var(--coral-text); }
+.feed-title { font-size: 17px; color: #1a0dab; }
+.is-before .feed-title { color: #5f6368; }
+.feed-cat { font-size: 13px; color: #4d5156; }
+.feed-arrow { width: 22px; align-self: center; color: var(--coral-text); }
+.feed-demo figcaption { font-family: var(--sans); font-size: 12px; color: var(--muted); text-align: center; }
+.feed-cards { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
