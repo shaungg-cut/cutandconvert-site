@@ -17,7 +17,7 @@ BODY = f"""
             <span class="rotator-word">performance creative.</span>
           </span>
         </h1>
-        <p class="lede">Big-brand Google and YouTube media buying plus a filmmaker's eye. We help local businesses get found, scale ecommerce brands, and turn your videos into performance YouTube creative. Rooted in San Diego, working coast to coast.</p>
+        <p class="lede">We use Google Ads to help ecommerce brands sell more and local businesses book more, with full visibility into what’s driving results. And we’ll show you how we do it, for free.</p>
         <div class="actions">
           <a class="btn btn-coral" href="#contact">Book a free audit</a>
           <a class="btn btn-outline" href="#paths">Explore services</a>
