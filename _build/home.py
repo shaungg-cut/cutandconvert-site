@@ -17,7 +17,7 @@ BODY = f"""
             <span class="rotator-word">performance creative.</span>
           </span>
         </h1>
-        <p class="lede">We use Google Ads to help ecommerce brands sell more and local businesses book more, with full visibility into what’s driving results. And we’ll show you how we do it, for free.</p>
+        <p class="lede">We use Google Ads to help <strong>ecommerce brands</strong> sell more and <strong>local businesses</strong> book more, with full visibility into what’s driving results. And we’ll show you how we do it, for free.</p>
         <div class="actions">
           <a class="btn btn-coral" href="#contact">Book a free audit</a>
           <a class="btn btn-outline" href="#paths">Explore services</a>

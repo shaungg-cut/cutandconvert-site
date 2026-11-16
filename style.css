@@ -528,3 +528,19 @@ p { margin: 0; }
 .feed-arrow { width: 22px; align-self: center; color: var(--coral-text); }
 .feed-demo figcaption { font-family: var(--sans); font-size: 12px; color: var(--muted); text-align: center; }
 .feed-cards { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+/* Local page: client logo row */
+.local-logos { border-bottom: 1px solid var(--line); background: var(--white); }
+.local-logos .wrap { padding-top: 40px; padding-bottom: 44px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.local-logo-row { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 28px 64px; }
+.local-logo-row li { display: flex; align-items: center; height: 60px; }
+.local-logo-row img { height: 56px; width: auto; opacity: .8; }
+.local-logo-row img.wide { height: 28px; }
+.local-logo-row img.mid { height: 40px; }
+.hero .lede strong { color: var(--ink); font-weight: 600; }
+@media (max-width: 700px) {
+  .local-logo-row { gap: 22px 36px; }
+  .local-logo-row img { height: 46px; }
+  .local-logo-row img.wide { height: 22px; }
+  .local-logo-row img.mid { height: 32px; }
+}

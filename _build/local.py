@@ -20,6 +20,18 @@ BODY = f"""
     </div>
   </section>
 
+  <section class="local-logos" aria-labelledby="local-logos-title">
+    <div class="wrap">
+      <p class="eyebrow" id="local-logos-title">Local businesses we help grow</p>
+      <ul class="local-logo-row">
+        <li><img src="/logos/local/stcharles.png" alt="St. Charles Catholic School" width="56" height="56"></li>
+        <li><img src="/logos/local/braveheart.png" alt="Braveheart Barbershop &amp; Lifestyle Co." width="53" height="56"></li>
+        <li><img src="/logos/local/forge8.svg" alt="CrossFit Forge8 Athletics" width="260" height="28" class="wide"></li>
+        <li><img src="/logos/local/fortius.png" alt="CrossFit Fortius" width="111" height="40" class="mid"></li>
+      </ul>
+    </div>
+  </section>
+
   <section class="section">
     <div class="wrap split">
       <div class="split-copy">
