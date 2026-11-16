@@ -30,7 +30,7 @@ BODY = f"""
   <section class="proof" aria-label="Experience">
     <div class="wrap">
       <div><p class="stat">$500M+</p><p class="muted">in ad spend managed</p></div>
-      <div><p class="stat">9+ years</p><p class="muted">running Google and YouTube ads</p></div>
+      <div><p class="stat">10+ years</p><p class="muted">running Google and YouTube ads</p></div>
       <div><p class="stat">15+ years</p><p class="muted">of video experience</p></div>
     </div>
   </section>
